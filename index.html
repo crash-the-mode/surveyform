@@ -8,8 +8,8 @@
 <body>
 	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	<header id="header">
-		<h1 id="title">Survey Form</h1>
-		<p id="description">My description</p>
+		<h1 id="title">DC vs Marvel Showdown</h1>
+		<p id="description">Choose who you think will win in a fight</p>
 	</header>
 	<main>
 		<form id="survey-form">
@@ -19,23 +19,118 @@
 			<label id="email-label" for="email">Email
 				<input id="email" type="email" name="email" placeholder="email" required>
 			</label>
-			<label id="number-label" for="number">Number
-				<input id="number" type="number" name="number" placeholder="Number" min="10" max="125" required>
+			<label id="number-label" for="number">Age
+				<input id="number" type="number" name="number" placeholder="Age" min="10" max="125" required>
 			</label>
-			<label for="dropdown">drop down menu
+			<fieldset id="dropdown">
+				<legend>Are you a Marvel or DC fan?</legend>
 				<select id="dropdown" name="team">
-					<option value=>1</option>
-					<option value=>2</option>
-					<option value=>3</option>
+					<option value=>Marvel</option>
+					<option value=>DC</option>
+					<option value=>Both</option>
+					<option value=>Neither</option>
 				</select>
+			</fieldset>
+			<p>Pick the winner of each matchup</p>
+			<fieldset>
+				<legend>Battle of the Atlantean</legend>
+			<label for="namor">
+				<input id="namor" type="radio" name="atlantean" value="namor">Namor
 			</label>
-			<p>radio buttons</p>
-			<label for="radio1">
-				<input id="radio1" type="radio" name="question1" value="choice1">choice1
+			<label for="aquaman">
+				<input id="aquaman" type="radio" name="atlantean" value="aquaman">Aquaman
 			</label>
-			<label for="radio2">
-				<input id="radio2" type="radio" name="question1" value="choice2">choice2
+			</fieldset>
+			<fieldset>
+				<legend>Battle of the anti-heroine</legend>
+			<label for="elektra">
+				<input id="elektra" type="radio" name="anti-heroine" value="elektra">Elektra
 			</label>
+			<label for="catwoman">
+				<input id="catwoman" type="radio" name="anti-heroine" value="catwoman">Catwoman
+			</label>
+			</fieldset>
+			<fieldset>
+				<legend>Who is the better speedster?</legend>
+			<label for="quicksilver">
+				<input id="quicksilver" type="radio" name="speedster" value="quicksilver">Quicksilver
+			</label>
+			<label for="flash">
+				<input id="flash" type="radio" name="speedster" value="flash">Flash
+			</label>
+			</fieldset>
+			<fieldset>
+				<legend>Better sidekick</legend>
+			<label for="jubilee">
+				<input id="jubilee" type="radio" name="sidekick" value="jubilee">Jubilee
+			</label>
+			<label for="robin">
+				<input id="robin" type="radio" name="sidekick" value="robin">Robin
+			</label>
+			</fieldset>
+			<fieldset>
+				<legend>Whose got the better power?</legend>
+			<label for="surfer">
+				<input id="surfer" type="radio" name="power" value="surfer">The Silver Surfer
+			</label>
+			<label for="lantern">
+				<input id="lantern" type="radio" name="power" value="lantern">Green Lantern
+			</label>
+			</fieldset>
+			<fieldset>
+				<legend>Whose more godlike?</legend>
+			<label for="thor">
+				<input id="thor" type="radio" name="godlike" value="thor">Thor
+			</label>
+			<label for="shazam">
+				<input id="shazam" type="radio" name="godlike" value="shazam">Shazam
+			</label>
+			</fieldset>
+			<fieldset>
+				<legend>Whose stronger?</legend>
+			<label for="hulk">
+				<input id="hulk" type="radio" name="strongest" value="hulk">The Hulk
+			</label>
+			<label for="superman">
+				<input id="superman" type="radio" name="strongest" value="superman">Superman
+			</label>
+			</fieldset>
+			<fieldset>
+				<legend>Better teenage hero</legend>
+			<label for="spiderman">
+				<input id="spiderman" type="radio" name="teenager" value="spiderman">Spiderman
+			</label>
+			<label for="superboy">
+				<input id="superboy" type="radio" name="teenager" value="superboy">Superboy
+			</label>
+			</fieldset>
+			<fieldset>
+				<legend>Vigilante</legend>
+			<label for="cap">
+				<input id="cap" type="radio" name="vigilante" value="cap">Captain America
+			</label>
+			<label for="batman">
+				<input id="batman" type="radio" name="vigilante" value="batman">Batman
+			</label>
+			</fieldset>
+			<fieldset>
+				<legend>Whose the main man?</legend>
+			<label for="wolverine">
+				<input id="wolverine" type="radio" name="the-main-man" value="wolverine">Wolverine
+			</label>
+			<label for="lobo">
+				<input id="lobo" type="radio" name="the-main-man" value="lobo">Lobo
+			</label>
+			</fieldset>
+			<fieldset>
+				<legend>Goddess</legend>
+			<label for="storm">
+				<input id="storm" type="radio" name="goddess" value="storm">Storm
+			</label>
+			<label for="wonder-woman">
+				<input id="wonder-woman" type="radio" name="goddess" value="wonder-woman">Wonder Woman
+			</label>
+			</fieldset>
 			<p>check boxes</p>
 			<label for="checkbox1">
 				<input id="checkbox1" type="checkbox" name="question2" value="choice1">choice1

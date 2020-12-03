@@ -13,15 +13,22 @@
 	</header>
 	<main>
 		<form id="survey-form">
+			<div>
 			<label id="name-label" for="name">Name<br>
 				<input id="name" type="text" name="name" placeholder="First Last" required>
-			</label><br>
+			</label>
+			</div>
+			<div>
 			<label id="email-label" for="email">Email<br>
 				<input id="email" type="email" name="email" placeholder="email" required>
-			</label><br>
+			</label>
+			</div>
+			<div>
 			<label id="number-label" for="number">Age<br>
 				<input id="number" type="number" name="number" placeholder="Age" min="10" max="125" required>
-			</label><br>
+			</label>
+			</div>
+			<div>
 			<label id="dropdown">Are you a Marvel or DC fan?<br>
 				<select id="dropdown" name="team">
 					<option value=>Marvel</option>
@@ -30,6 +37,7 @@
 					<option value=>Neither</option>
 				</select>
 			</label>
+			</div>
 			</fieldset>
 			<p>Pick the winner of each matchup</p>
 			<fieldset>

@@ -1,0 +1,31 @@
+body {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+#name, #email, #number, button, textarea {
+	width: 100%;
+}
+
+main {
+	width: 720px;
+	margin: auto;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+@media (max-width: 540px) {
+	main {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 541px) {
+	main {
+		width: 83%;
+	}
+}
+

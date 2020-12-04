@@ -9,7 +9,7 @@
 	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	<header id="header">
 		<h1 id="title">DC vs Marvel Showdown</h1>
-		<p id="description">Choose who you think will win in a fight</p>
+		<p id="description">Choose the winner of each matchup and more</p>
 	</header>
 	<main>
 		<form id="survey-form" action="#" method="post">
@@ -26,7 +26,7 @@
 				<input id="number" type="number" name="number" placeholder="Age" min="10" max="125" required>
 			</div>
 			<div>
-			<label id="dropdown">Are you a Marvel or DC fan?</label>
+			<label id="dropdown-label" for="dropdown">Are you a Marvel or DC fan?</label>
 				<select id="dropdown" name="team">
 					<option value=>Marvel</option>
 					<option value=>DC</option>
@@ -34,8 +34,7 @@
 					<option value=>Neither</option>
 				</select>
 			</div>
-			</fieldset>
-			<p>Pick the winner of each matchup</p>
+
 			<fieldset>
 				<legend>Battle of the Atlantean</legend>
 			<label for="namor">
@@ -138,82 +137,97 @@
 			<fieldset>
 				<legend>Marvel needs to make a movie for:</legend>
 				<div>
-					<input id="doom" type="checkbox" name="marvel" value="doom">
-					<label for="doom">Dr. Doom</label>
+					<label for="doom">
+						<input id="doom" type="checkbox" name="marvel" value="doom">Dr. Doom
+					</label>
 				</div>
 				<div>
-					<input id="mephisto" type="checkbox" name="marvel" value="mephisto">
-					<label for="mephisto">Mephisto</label>
+					<label for="mephisto">
+						<input id="mephisto" type="checkbox" name="marvel" value="mephisto">Mephisto
+					</label>
 				</div>
 				<div>
-					<input id="moon-knight" type="checkbox" name="marvel" value="moon-knight">
-					<label for="moon-knight">Moon Knight</label>
+					<label for="moon-knight">
+						<input id="moon-knight" type="checkbox" name="marvel" value="moon-knight">Moon Knight
+					</label>
 				</div>
 				<div>
-					<input id="squirrel-girl" type="checkbox" name="marvel" value="squirrel-girl">
-					<label for="squirrel-girl">Squirrel Girl</label>
+					<label for="squirrel-girl"><input id="squirrel-girl" type="checkbox" name="marvel" value="squirrel-girl">Squirrel Girl
+					</label>
 				</div>
 				<div>
-					<input id="planet-hulk" type="checkbox" name="marvel" value="planet-hulk">
-					<label for="planet-hulk">The Planet Hulk and World War Hulk arc</label>
+					<label for="planet-hulk">
+						<input id="planet-hulk" type="checkbox" name="marvel" value="planet-hulk">The Planet Hulk and World War Hulk arc
+					</label>
 				</div>
 				<div>
-					<input id="miles-morales" type="checkbox" name="marvel" value="miles-morales">
-					<label for="miles-morales">Miles Morales</label>
+					<label for="miles-morales"><input id="miles-morales" type="checkbox" name="marvel" value="miles-morales">Miles Morales
+					</label>
 				</div>
 				<div>
-					<input id="spider-woman" type="checkbox" name="marvel" value="spider-woman">
-					<label for="spider-woman">Spider Woman</label>
+					<label for="spider-woman">
+						<input id="spider-woman" type="checkbox" name="marvel" value="spider-woman">Spider Woman
+					</label>
 				</div>
 				<div>
-					<input id="she-hulk" type="checkbox" name="marvel" value="she-hulk">
-					<label for="she-hulk">She-Hulk</label>
+					<label for="she-hulk">
+						<input id="she-hulk" type="checkbox" name="marvel" value="she-hulk">She-Hulk
+					</label>
 				</div>
 				<div>
-					<input id="kamala-khan" type="checkbox" name="marvel" value="kamala-khan">
-					<label for="kamala-khan">Kamala Khan</label>
+					<label for="kamala-khan">
+						<input id="kamala-khan" type="checkbox" name="marvel" value="kamala-khan">Kamala Khan</label>
 				</div>
 			</fieldset>
 			<fieldset>
 				<legend>DC needs to make a movie for:</legend>
 				<div>
-					<input id="darkseid" type="checkbox" name="dc" value="darkseid">
-					<label for="darkseid">Darkseid</label>
+					<label for="darkseid">
+						<input id="darkseid" type="checkbox" name="dc" value="darkseid">Darkseid
+					</label>
 				</div>
 				<div>
-					<input id="vandal-savage" type="checkbox" name="dc" value="vandal-savage">
-					<label for="vandal-savage">Vandal Savage</label>
+						<label for="vandal-savage">
+							<input id="vandal-savage" type="checkbox" name="dc" value="vandal-savage">Vandal Savage
+						</label>
 				</div>
 				<div>
-					<input id="nightwing" type="checkbox" name="dc" value="nightwing">
-					<label for="nightwing">Nightwing</label>
+					<label for="nightwing">
+						<input id="nightwing" type="checkbox" name="dc" value="nightwing">Nightwing
+					</label>
 				</div>
 				<div>
-					<input id="raven" type="checkbox" name="dc" value="raven">
-					<label for="raven">Raven</label>
+					<label for="raven">
+						<input id="raven" type="checkbox" name="dc" value="raven">Raven
+					</label>
 				</div>
 				<div>
-					<input id="question" type="checkbox" name="dc" value="question">
-					<label for="question">The Question</label>
+					<label for="question">
+						<input id="question" type="checkbox" name="dc" value="question">The Question
+					</label>
 				</div>
 				<div>
-					<input id="static" type="checkbox" name="dc" value="static">
-					<label for="static">Static Shock</label>
+					<label for="static">
+						<input id="static" type="checkbox" name="dc" value="static">Static Shock
+					</label>
 				</div>
 				<div>
-					<input id="zatanna" type="checkbox" name="dc" value="zatanna">
-					<label for="zatanna">Zatanna</label>
+					<label for="zatanna">
+						<input id="zatanna" type="checkbox" name="dc" value="zatanna">Zatanna
+					</label>
 				</div>
 				<div>
-					<input id="martian-manhunter" type="checkbox" name="dc" value="martian-manhunter">
-					<label for="martian-manhunter">Martian Manhunter</label>
+					<label for="martian-manhunter">
+						<input id="martian-manhunter" type="checkbox" name="dc" value="martian-manhunter">Martian Manhunter
+					</label>
 				</div>
 				<div>
-					<input id="green-arrow" type="checkbox" name="dc" value="green-arrow">
-					<label for="green-arrow">Green Arrow</label>
+					<label for="green-arrow">
+						<input id="green-arrow" type="checkbox" name="dc" value="green-arrow">Green Arrow
+					</label>
 				</div>
 			</fieldset>
-			<div id="textarea-div">
+			<div id="textarea-div">Leave some suggestions.
 			<textarea name="textarea">What two charcters should brawl and which characters from Marvel or DC need a movie?
 			</textarea>
 			</div>

@@ -1,50 +1,70 @@
 body {
 	box-sizing: border-box;
 	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, Verdana, sans-serif;
 }
 
-h1, p {
+header {
 	text-align: center;
-}
-
-#name, #email, #number, #dropdown, button, textarea {
-	width: 100%;
-	font-size: 1.25rem;
-}
-
-textarea {
-	font-size: initial;
-}
-
-#name-label, #email-label, #number-label, #dropdown-label {
-	display: block;
-	margin-top: .5rem;
+	margin-top: 50px;
 }
 
 main {
 	width: 720px;
 	margin: auto;
-	font-size: 1.25em;
+	font-size: 1.25rem;
+	padding: 36px;
+	background-color: DarkOrchid;
 }
 
+.input-div {
+	margin-bottom: 1rem;
+}
+
+#name, #email, #number, #dropdown, button, textarea {
+	width: 100%;
+	font-size: 1.1rem;
+	padding: 12px;
+	margin-top: 5px;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+#name-label, #email-label, #number-label, #dropdown-label {
+	display: block;
+}
+
+
 fieldset {
+	margin: .6em 0em .6em 0em;
 	padding: 0;
-	margin: .5em 0em .5em 0em;
 	border-style: none;
 }
 
 fieldset > label {
 	display: block;
+	margin: .25rem 0 .25rem 0;
 }
 
 fieldset > div > label {
-	display: inline-block;
-	width: 100%;
+	display: block;
+	margin: .25rem 0 .25rem 0;
+}
+
+textarea {
+	font-size: 16px;
+	height: 150px;
+}
+
+button {
+	margin-bottom: 10px;
 }
 
 @media (max-width: 540px) {
 	main {
-		width: 100%;
+		width: 91.66%;
+		padding: 12px;
 	}
 }
 

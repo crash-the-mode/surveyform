@@ -13,19 +13,19 @@
 	</header>
 	<main>
 		<form id="survey-form" action="#" method="post">
-			<div>
+			<div class="input-div">
 				<label id="name-label" for="name">Name</label>
 				<input id="name" type="text" name="name" placeholder="First Last" required>
 			</div>
-			<div>
+			<div class="input-div">
 				<label id="email-label" for="email">Email</label>
-				<input id="email" type="email" name="email" placeholder="email" required>
+				<input id="email" type="email" name="email" placeholder="Email" required>
 			</div>
-			<div>
+			<div class="input-div">
 				<label id="number-label" for="number">Age</label>
 				<input id="number" type="number" name="number" placeholder="Age" min="10" max="125" required>
 			</div>
-			<div>
+			<div class="input-div">
 			<label id="dropdown-label" for="dropdown">Are you a Marvel or DC fan?</label>
 				<select id="dropdown" name="team">
 					<option value=>Marvel</option>
@@ -36,7 +36,7 @@
 			</div>
 
 			<fieldset>
-				<legend>Battle of the Atlantean</legend>
+				<legend>Who's the king of Atlantis?</legend>
 			<label for="namor">
 				<input id="namor" type="radio" name="atlantean" value="namor">Namor
 			</label>
@@ -45,7 +45,7 @@
 			</label>
 			</fieldset>
 			<fieldset>
-				<legend>Battle of the anti-heroine</legend>
+				<legend>Who's wins in fight between anti-heroines?</legend>
 			<label for="elektra">
 				<input id="elektra" type="radio" name="anti-heroine" value="elektra">Elektra
 			</label>
@@ -54,7 +54,7 @@
 			</label>
 			</fieldset>
 			<fieldset>
-				<legend>Who is the better speedster?</legend>
+				<legend>Who's the better speedster?</legend>
 			<label for="quicksilver">
 				<input id="quicksilver" type="radio" name="speedster" value="quicksilver">Quicksilver
 			</label>
@@ -63,7 +63,7 @@
 			</label>
 			</fieldset>
 			<fieldset>
-				<legend>Better sidekick</legend>
+				<legend>Who's the better sidekick?</legend>
 			<label for="jubilee">
 				<input id="jubilee" type="radio" name="sidekick" value="jubilee">Jubilee
 			</label>
@@ -72,7 +72,7 @@
 			</label>
 			</fieldset>
 			<fieldset>
-				<legend>Whose got the better power?</legend>
+				<legend>Who's got the better space powers?</legend>
 			<label for="surfer">
 				<input id="surfer" type="radio" name="power" value="surfer">The Silver Surfer
 			</label>
@@ -81,7 +81,7 @@
 			</label>
 			</fieldset>
 			<fieldset>
-				<legend>Whose more godlike?</legend>
+				<legend>Who's more godlike?</legend>
 			<label for="thor">
 				<input id="thor" type="radio" name="godlike" value="thor">Thor
 			</label>
@@ -90,7 +90,7 @@
 			</label>
 			</fieldset>
 			<fieldset>
-				<legend>Whose stronger?</legend>
+				<legend>Who wins this contest of strength?</legend>
 			<label for="hulk">
 				<input id="hulk" type="radio" name="strongest" value="hulk">The Hulk
 			</label>
@@ -99,7 +99,7 @@
 			</label>
 			</fieldset>
 			<fieldset>
-				<legend>Better teenage hero</legend>
+				<legend>Who's the better teenage hero?</legend>
 			<label for="spiderman">
 				<input id="spiderman" type="radio" name="teenager" value="spiderman">Spiderman
 			</label>
@@ -108,7 +108,7 @@
 			</label>
 			</fieldset>
 			<fieldset>
-				<legend>Vigilante</legend>
+				<legend>Who's the better vigilante?</legend>
 			<label for="cap">
 				<input id="cap" type="radio" name="vigilante" value="cap">Captain America
 			</label>
@@ -117,7 +117,7 @@
 			</label>
 			</fieldset>
 			<fieldset>
-				<legend>Whose the main man?</legend>
+				<legend>Who's the main man?</legend>
 			<label for="wolverine">
 				<input id="wolverine" type="radio" name="the-main-man" value="wolverine">Wolverine
 			</label>
@@ -126,7 +126,7 @@
 			</label>
 			</fieldset>
 			<fieldset>
-				<legend>Goddess</legend>
+				<legend>Which goddess will triumph?</legend>
 			<label for="storm">
 				<input id="storm" type="radio" name="goddess" value="storm">Storm
 			</label>
@@ -176,7 +176,11 @@
 				</div>
 				<div>
 					<label for="kamala-khan">
-						<input id="kamala-khan" type="checkbox" name="marvel" value="kamala-khan">Kamala Khan</label>
+						<input id="kamala-khan" type="checkbox" name="marvel" value="kamala-khan">Kamala Khan
+					</label>
+					<label for"othermarvel">
+						<input id="othermarvel" type="checkbox" name="marvel" value="other">Other
+					</label>
 				</div>
 			</fieldset>
 			<fieldset>
@@ -225,11 +229,13 @@
 					<label for="green-arrow">
 						<input id="green-arrow" type="checkbox" name="dc" value="green-arrow">Green Arrow
 					</label>
+					<label for="otherdc">
+						<input id="otherdc" type="checkbox" name="dc" value="otherdc">Other
+					</label>
 				</div>
 			</fieldset>
-			<div id="textarea-div">Leave some suggestions.
-			<textarea name="textarea">What two charcters should brawl and which characters from Marvel or DC need a movie?
-			</textarea>
+			<div>Leave some suggestions.
+			<textarea name="textarea">What two characters should brawl and which characters from Marvel or DC need a movie?</textarea>
 			</div>
 			<button id="submit" type="submit">Submit</button>
 		</form>

@@ -40,6 +40,12 @@ main {
 	margin-top: 8px;
 	border-style: none;
 	outline: none;
+	box-shadow: 0px 0px 0px 0px royalblue;
+}
+
+#name, #email, #number, #dropdown {
+	border-radius: 8px;
+	border: 1px solid silver;
 }
 
 fieldset {
@@ -72,8 +78,9 @@ button {
 	cursor: pointer;
 }
 
-#name:focus, #email:focus, #number:focus, #dropdown:focus, textarea:focus {
-	border: 2px solid darkblue;
+#name:focus, #email:focus, #number:focus, #dropdown:focus, textarea:focus , button:focus {
+	box-shadow: 0px 0px 0px 3px royalblue;
+	transition: 0.15s;
 }
 
 @media (max-width: 540px) {

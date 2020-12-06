@@ -1,9 +1,9 @@
 body {
-	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	font-family: Helvetica, Arial, Verdana, sans-serif;
 	background-color: darkblue;
+	color: gold;
 }
 
 header {
@@ -16,32 +16,34 @@ main {
 	width: 720px;
 	margin: auto;
 	font-size: 1.25rem;
+	border: 1px solid black;
 	padding: 36px;
-	background-color: darkred;
-	color: gold;
 	box-sizing: border-box;
+	background-color: darkred;
+	border: 1px solid darkred;
+	border-radius: 3px;
 }
 
 .input-div {
-	margin-bottom: 1rem;
-}
-
-#name, #email, #number, #dropdown, button, textarea {
-	width: 100%;
-	font-size: 1.1rem;
-	padding: 12px;
-	margin-top: 5px;
+	margin-bottom: 1.5rem;
 }
 
 #name-label, #email-label, #number-label, #dropdown-label {
 	display: block;
 }
 
+#name, #email, #number, #dropdown, button, textarea {
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 16px;
+	padding: 8px;
+	margin-top: 8px;
+}
 
 fieldset {
-	margin: .6em 0em .6em 0em;
-	padding: 0;
 	border-style: none;
+	padding: 0;
+	margin: .6em 0em .6em 0em;
 }
 
 fieldset > label {
@@ -59,7 +61,6 @@ label > input {
 }
 
 textarea {
-	font-size: 16px;
 	height: 150px;
 }
 

@@ -38,8 +38,8 @@ main {
 	font-size: 16px;
 	padding: 8px;
 	margin-top: 8px;
-
 	border-style: none;
+	outline: none;
 }
 
 fieldset {
@@ -69,6 +69,11 @@ textarea {
 button {
 	margin: 20px 0 10px 0;
 	background-color: gold;
+	cursor: pointer;
+}
+
+#name:focus, #email:focus, #number:focus, #dropdown:focus, textarea:focus {
+	border: 2px solid darkblue;
 }
 
 @media (max-width: 540px) {

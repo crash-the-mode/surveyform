@@ -16,11 +16,9 @@ main {
 	width: 720px;
 	margin: auto;
 	font-size: 1.25rem;
-	border: 1px solid black;
 	padding: 36px;
 	box-sizing: border-box;
 	background-color: darkred;
-	border: 1px solid darkred;
 	border-radius: 3px;
 }
 
@@ -68,6 +66,7 @@ label > input {
 }
 
 textarea {
+	resize: vertical;
 	height: 150px;
 }
 
